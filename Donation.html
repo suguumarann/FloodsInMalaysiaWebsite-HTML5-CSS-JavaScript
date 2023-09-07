@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>Floods In Malaysia - Donation</title>
+    <meta name="viewport" content="with = device-width, initial-scale = 1.0">
+    <meta charset="utf-8">
+    <style>
+        #name_error{
+            display: none;
+            color: red;
+        }
+        #name_error.active{
+            display: block;
+        }
+
+        #email_error{
+            display: none;
+            color: red;
+        }
+        #email_error.active{
+            display: block;
+        }
+
+        #age_error{
+            display: none;
+            color: red;
+        }
+        #age_error.active{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_bar dropdown">
+        <ul>
+            <a title="Click To See: Malaysia Suffers Worst Floods In Decades After Torrential Rains" class="nav_title"
+                href="https://youtu.be/N6q5iVFxAlc"
+                target="_blank">
+                <h3>FLOODS IN MALAYSIA </h3>
+            </a>
+            <button class="dropbtn">MAIN MENU</button>
+            <div class="dropdown-content">
+                <li><a title="Click To Seek Assistance" href="Assistance.html">Assistance</a></li>
+                <li><a title="Click To Provide Donation" href="Donation.html"
+                        class="active">Donation</a></li>
+                <li><a title="Click To See: Causes Of Flood" href="Causes.html">Causes</a></li>
+                <li><a title="Click To See: Our Home Page" href="Home.html">Home</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <header>
+        <div class="home_main">
+            <div class="home_image">
+                <image src = "https://media.istockphoto.com/id/1054862898/photo/brightly-lit-donation-money-jar-filled-with-coins.jpg?b=1&s=170667a&w=0&k=20&c=M-WS1S0Bt3zUjwFgMzO-BsZpGAPJPQt-2Ue45haJXQA="></image>
+            </div>
+        </div>
+    </header>
+
+    <main class="main_background sub_header">
+
+        <section>
+            <br>
+            <h1 class="center" style="text-shadow: 0 0 10px rgba(0,0,0,.5)">DONATION</h1>
+            <br>
+
+            <div class="center content horizontal_line">
+                <h3>Let's help and support those who are affected by the flood through donation.</h3>
+                
+            </div>
+        </section>
+
+        <section style="color: white">
+            
+            DONATION FORM:
+            <h3>&nbsp;</h3>
+            Personal Details:
+           <form onsubmit="alert('We thank you for your donation! Let us make this world a better place!')">
+
+            <label for="name">Name:</label>
+            <input onchange="check_name()" type="text" id="name" name="user_name">
+            <span id="name_error">Enter a valid name!</span>
+
+            <label for="age">Age:</label>
+            <input onchange="check_age()" type="number" id="age" name="user_age" min="18">
+            <span id="age_error">You must be 18 years old or older!</span>
+           
+            <label for="email">Email:</label>
+            <input onchange="check_email()" type="email" id="email" name="user_email">
+            <span id="email_error">Enter a valid email!</span>
+
+            <h3>&nbsp;</h3>
+            Payment Methods:<br>
+            <input type="radio" id="bank-transfer" name="methods" value="bank-transfer">
+            <label for="bank-transfer">Bank Transfer</label><br>
+            <input type="radio" id="credit-card" name="methods" value="credit-card">
+            <label for="credit-card">Credit Card</label><br>
+            <input type="radio" id="debit-card" name="methods" value="debit-card">
+            <label for="debit-card">Debit Card</label><br>
+            <input type="radio" id="e-wallet" name="methods" value="e-wallet">
+            <label for="e-wallet">E-wallet</label>
+
+            <h3>&nbsp;</h3>
+            Donation Amount:<br>
+            <input type="radio" id="RM100" name="fund" value="RM100">
+            <label for="RM100">RM100</label><br>
+            <input type="radio" id="RM50" name="fund" value="RM50">
+            <label for="RM50">RM50</label><br>
+            <input type="radio" id="RM20" name="fund" value="RM20">
+            <label for="RM20">RM20</label><br>
+            <input type="radio" id="RM10" name="fund" value="RM10">
+            <label for="RM10">RM10</label><br>
+            <input type="radio" id="RM5" name="fund" value="RM5">
+            <label for="RM5">RM5</label><br>
+            <input type="radio" id="RM1" name="fund" value="RM1">
+            <label for="RM1">RM1</label><br>
+            
+            <input type="submit" value="SUBMIT FORM" onclick="alert('You will receive a confirmation email shortly to verify your transaction!')">
+            <h3>&nbsp;</h3>
+           </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="foot">
+            <div class="for">For More Enquiries:</div>
+            <div class="contacts">
+                <div class="sugu">
+                    <p>Sugumaran A/L Thiagarajan</p>
+                    <p>18117069@imail.sunway.edu.my</p>
+                    <div class="for">Copyright &copy; 2022 Sunway University</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="Script.js"></script>
+</body>
+
+</html>

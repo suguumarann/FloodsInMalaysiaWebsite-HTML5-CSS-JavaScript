@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+
+    <style>
+        
+        .screen{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+
+        .split_content h1{
+            font-size: 55px;
+            padding-right: 8px;
+            text-align: center;
+        }
+        
+        .split_content p{
+            display: none;
+        }
+
+        .screen:hover .split_content p{
+            display: contents;
+        }
+
+        .screen:nth-child(1){
+            background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(images/Home_1.jpg);
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex: content;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px #000000;
+        }
+
+        .screen:nth-child(2){
+            background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(images/Home_2.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex: content;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px #000000;
+        }
+
+        .split_card{
+            max-width:300px;
+            transition: 1s;
+            align-content: center;
+        }
+
+        .screen:hover {
+            flex-grow: 10;
+        }
+
+        /*Card title text*/
+        .card h3 {
+            color: #ffcf10;
+            font-family: "Garamond";
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 30px 0 20px;
+            background: #f14747;
+            height: 60px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        /* Card paragraph text*/
+        .card p {
+            color: #fffDD0;
+            font-family: 'Lucida Sans';
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .card p em {
+            color: #fffDD0;
+            font-family: 'Garamond';
+            font-size: 20px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            line-height: 28px;
+            text-align: center;
+            font-style: normal;
+        }
+
+        /* The foundation framework of the card*/
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1cm 0 1cm;
+        }
+
+        /* overall card setting*/
+        .card {
+            background: #f14747;
+            width: 355px;
+            height: auto;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, .3);
+        }
+
+        /*Card animations when you hover on it*/
+        .card:hover {
+            cursor: pointer;
+            transform: scale(1.06);
+            transition: 0.5s;
+        }
+
+        /*Card image size settings*/
+        .card img {
+            width: 100%;
+            height: 550px;
+            object-fit: auto;
+            object-position: center;
+        }
+
+        /*Read More button*/
+        .card a {
+            background-color: #ffce10; 
+            color: #3c2132;
+            font-family: "Garamond";
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 20px;
+            padding: 8px;
+            margin: 40px 75px;
+            text-decoration: none;
+            display: block;
+            box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, .3);
+        }
+
+        /*animation when you hover the READ MORE button*/
+        .card a:hover {
+            background-color: #fffDD0;
+            color: #000000;
+            transition: 0.2s;
+        }
+
+    </style>
+
+    <title>Floods In Malaysia - Home</title>
+    <meta name="viewport" content="with = device-width, initial-scale = 1.0">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+
+        <section>
+            <div class="nav_bar dropdown">
+                <ul>
+                    <a title="Click To See: Malaysia Suffers Worst Floods In Decades After Torrential Rains" class="nav_title" href="https://youtu.be/N6q5iVFxAlc" target="_blank"><h3>FLOODS IN MALAYSIA </h3></a>
+                    <button class="dropbtn">MAIN MENU</button>
+                    <div class="dropdown-content">
+                        <li><a title="Click To Seek Assistance" href="Assistance.html">Assistance</a></li>
+                        <li><a title="Click To Provide Donation" href="Donation.html">Donation</a></li>
+                        <li><a title="Click To See: Causes Of Flood" href="Causes.html">Causes</a></li>
+                        <li><a title="Click To See: Our Home Page" href="Home.html" class="active">Home</a></li>
+                    </div>
+                </ul> 
+            </div>
+        </section>
+    
+        <div class="home_main">
+            <div class="home_image">
+                <image src = "https://www.aljazeera.com/wp-content/uploads/2022/01/h_57367389.jpg?resize=770%2C513"></image>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main_background_Home sub_header">
+        <section style="position: relative;">
+        
+            <h1 class="center">&mdash; FLOODS IN MALAYSIA &mdash;</h1>
+
+            <div class="center content horizontal_line" style="text-align: justify; padding-left: 65px; padding-right: 65px;">
+                <h3>&nbsp;<br>The majority of Malaysians are affected by flood every time it happens. As monsoon season approaches, flash flood always becomes a common sight in Malaysia and it is a common waking nightmare for many people here. Flash floods inundate the roads and houses, leaving the people high-and-dry as they find themselves stuck in the middle of an unexpected swamp or forced to leave their homes as they become a high-tide zone in the middle of formerly-dry land. And to make matters worse, it would seem that flash floods are becoming more and more frequent in Malaysia. So what is causing these floods to rise in frequency? And what can be done in order to mitigate them? On this website, we will take a look at the causes of floods, provide donations to those who are affected by these deadly floods at the same time provide various assistance to those who are really in need.</h3>
+            </div>
+        </section>
+
+        <section class="container">
+
+            <div class="card">
+                <h3>CAUSES</h3>
+                <img src="https://images.pexels.com/photos/5195490/pexels-photo-5195490.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <div>
+                    <p><em>THIS PAGE DISCUSSES ABOUT<br>THE CAUSES OF FLOOD IN MALAYSIA<br><br></em>
+                        From heavy rainfall to clogged drains,<br>this page explains in detail regarding<br>the ever-frequent &
+                        life-threatening
+                        <br>flash floods plaguing our country</p>
+                    <a href="Causes.html" title="Causes">CLICK TO VISIT</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>DONATION</h3>
+                <img src="https://images.pexels.com/photos/6347730/pexels-photo-6347730.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <div>
+                    <p><em>THIS PAGE ALLOWS YOU TO DONATE TO THE FLOOD VICTIMS<br><br></em>
+                        Recovering from flood damage is an<br>incredibly expensive endeavour<br>especially for the vulnerable<br>
+                        & rural poor communities</p>
+                    <a href="Donation.html" title="Donation">CLICK TO VISIT</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="card">
+                <h3>ASSISTANCE</h3>
+                <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZCUyMGNoYXJpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60">
+                <div>
+                    <p><em>THIS PAGE ENABLES HELPLESS<br>FLOOD VICTIMS TO SEEK ASSISTANCE<br><br></em>
+                        From food to clothes, access to even<br> basic necessities can be a challenge <br>for those who are affected by the <br> deadly floods every single year
+                    </p>
+                    <a href="Assistance.html" title="Assistance">CLICK TO VISIT</a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="foot">
+            <div class="for">For More Enquiries:</div>
+            <div class="contacts">
+                <div class="sugu">
+                    <p>Sugumaran A/L Thiagarajan</p>
+                    <p>18117069@imail.sunway.edu.my</p>
+                    <div class="for">Copyright &copy; 2022 Sunway University</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
